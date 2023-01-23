@@ -1,13 +1,12 @@
 
 class Solution {
     public String solution(String my_string) {
+        String answer = "";
         char[] cArr = my_string.toCharArray();
-        char[] cArr2 = my_string.toCharArray();
-        int length = cArr.length - 1;
-        for(int i = 0; i < cArr.length; i++, length--) {
-            cArr[length] = cArr2[i];
+        for(int i = cArr.length - 1; i >= 0; i--) {
+            answer += cArr[i];
             
         }
-        return new String(cArr);
+        return answer;
     }
 }
