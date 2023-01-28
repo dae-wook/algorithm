@@ -1,7 +1,7 @@
 import java.util.*;
 class Solution {
     public static int[] solution(int[] numbers) {
-        HashSet<Integer> set = new HashSet<>();
+        Set<Integer> set = new TreeSet<>();
         for (int i = 0; i < numbers.length; i++) {
             for (int j = 0; j < numbers.length; j++) {
                 if(i != j) {
@@ -16,7 +16,7 @@ class Solution {
             answer[i] = iterator.next();
             i++;
         }
-        Arrays.sort(answer);
+        // Arrays.sort(answer);
         return answer;
     }
 }
