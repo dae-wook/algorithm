@@ -17,9 +17,7 @@ class Solution {
         Iterator<String> iter = keySet.iterator();
         while(iter.hasNext()) {
             String key = iter.next();
-           while(str.contains(key)) {
-               str = str.replace(key, map.get(key).toString());
-           }
+            str = str.replaceAll(key, map.get(key).toString());
         }
         return Integer.parseInt(str);
     }
