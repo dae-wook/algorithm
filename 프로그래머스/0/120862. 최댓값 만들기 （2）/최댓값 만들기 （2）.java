@@ -1,6 +1,6 @@
 class Solution {
     public int solution(int[] numbers) {
-        int answer = -1000000000;
+        int answer = Integer.MIN_VALUE;
         
         for(int i = 0; i < numbers.length - 1; i++) {
             for(int j = 0; j < numbers.length; j++) {
