@@ -21,7 +21,8 @@ class Solution {
         
         for(int i = 0; i < list.size(); i++) {
             if(count + list.get(i) >= k) {
-                return i + 1;
+                answer= i + 1;
+                break;
             }
             count += list.get(i);
         }
